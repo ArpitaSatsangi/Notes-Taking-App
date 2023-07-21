@@ -30,3 +30,14 @@
 * By importing the json module, you gain access to functions such as json.dumps(), which converts a Python object into a JSON-formatted string, and json.loads(), which parses a JSON string and returns a corresponding Python object.
 
 * The json module is commonly used in Python when working with APIs that send or receive data in JSON format, reading and writing JSON files, or when exchanging data between different systems that communicate using JSON.
+
+
+
+## *FUNCTION EXPLANATION* -
+
+
+* The function add_note() creates a graphical user interface (GUI) element for adding new notes to a notebook. It assumes that you have a notebook container (named notebook) and a dictionary (named notes) to store the notes. The notes are saved to a JSON file called "notes.json".
+
+* The function load_notes() is responsible for loading notes from a JSON file named "notes.json" and displaying them in the notebook widget. If the file exists, it reads the data from it, creates a new text widget for each note, and adds it as a new tab in the notebook. If the file doesn't exist (FileNotFoundError), the function simply does nothing.
+
+* The function delete_note() is designed to delete a selected note from the notebook widget and the notes dictionary. It prompts the user with a confirmation dialog to confirm the deletion. If the user confirms the deletion, the note is removed from both the notebook and the notes dictionary, and the updated notes dictionary is saved back to the "notes.json" file.
